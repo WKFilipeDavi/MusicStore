@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Music Store</title>
+</head>
+
+<body>
+    <div class="p-4">
+        <header class="">
+            <div>
+                <h1>MusicStory</h1>
+            </div>
+    
+            <div>
+                <form>
+                    <div class="border-2 border-zinc-500 rounded-full flex justify-between">
+                        <input class="px-4 rounded-full" type="text" placeholder="Busque aqui seu produto">
+                        <button> <img src="/assets/icons/search.svg" width="20px"> </button>
+                    </div>
+                </form>
+            </div>
+            <div></div>
+        </header>
+    </div>
+    <form action="" id="frm1">
+        <div class="mb-3 mt-3">
+          <label for="user" class="form-label">Usuário:</label>
+          <input type="text" class="form-control" id="usuario" placeholder="Digite seu usuário" name="user">
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha:</label>
+          <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" name="senha">
+        </div>
+        <button type="submit" class="btn" onclick="validar();">Entrar</button>
+      </form>
+</body>
+</html>
+
+<script lang="javascript">
+    function validar(){
+        if(usuario.value.length<3){
+           alert("Informe o nome de usuário");
+           usuario.focus();
+           return false;     
+        }
+        if(senha.value.length<6){
+            alert("Informe a senha");
+            senha.focus();    
+            return false;    
+        }
+        alert("Entrou");
+        frm1.submit();
+    }
+</script>
