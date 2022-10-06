@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Music Store</title>
+</head>
+
+<body>
+    <h1>CADASTRO</h1>
+    <form action="" id="frm2">
+        <div class="mb-3 mt-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="cadNome" placeholder="Digite seu nome completo" name="nome">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="text" class="form-control" id="caEmail" placeholder="Digite seu e-mail" name="email">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="cpf" class="form-label">CPF:</label>
+            <input type="text" class="form-control" id="cadCpf" placeholder="Digite seu CPF" name="cpf">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="user" class="form-label">Usuário:</label>
+          <input type="text" class="form-control" id="cadUsuario" placeholder="Digite seu usuário" name="user">
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha:</label>
+          <input type="password" class="form-control" id="CadSenha" placeholder="Digite sua senha" name="senha">
+        </div>
+        <button type="submit" class="btn" onclick="validar();">Entrar</button>
+      </form>
+</body>
