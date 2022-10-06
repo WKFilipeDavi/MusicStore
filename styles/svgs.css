@@ -1,8 +1,15 @@
-.svg--white svg{
+.svg--white svg {
     fill: white;
+}
+
+.svg__bg--purple {
+    background-color: #8a2be2;
+}
+
+.svg--size-15 svg {
     width: 15px;
 }
 
-.svg--white{
-    background-color: #8a2be2;
+.svg--size-20 svg {
+    width: 20px;
 }
