@@ -1,5 +1,4 @@
-$(document).ready(function(){
-// jQuery methods go here...
-    $(".teste").css("color","purple");
-    console.log('script');
-});
+import header from './partials/header.js';
+
+console.log('main');
+header.init();
