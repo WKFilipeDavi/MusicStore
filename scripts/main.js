@@ -1,4 +1,5 @@
 import header from './partials/header.js';
+import tailwind from './configs/tailwind.js';
 
-console.log('main');
 header.init();
+tailwind.init();

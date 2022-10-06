@@ -1,0 +1,8 @@
+.svg--white svg{
+    fill: white;
+    width: 15px;
+}
+
+.svg--white{
+    background-color: #8a2be2;
+}
