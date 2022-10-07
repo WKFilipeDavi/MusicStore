@@ -1,9 +1,19 @@
-<header class="p-4 border-b-2 border-ms-pink border-groove bg-ms-dark-purple">
-    <div>
+<header class="p-4 border-b-2 border-ms-pink border-groove bg-ms-dark-purple md:flex md:flex-col">
+    <div class="md:flex md:justify-between">
         <h1 class="text-ms-pink text-center text-[3rem]">MusicStore</h1>
+        
+        <div class="hidden md:flex">
+            <a href="#" class="mr-14">
+                <div class="svg--white svg--size-40 rounded-full flex justify-center items-center" w3-include-html="./partials/svgs/cart.html"></div>
+            </a>
+            
+            <a href="login.html">
+                <div class="svg--white svg--size-40 rounded-full flex justify-center items-center" w3-include-html="./partials/svgs/profile.html"></div>
+            </a>
+        </div>
     </div>
 
-    <div class="mt-[20px]">
+    <div class="mt-[20px] md:w-full md:max-w-[600px] md:mx-auto">
         <form>
             <div class="border-2 border-zinc-500 rounded-full flex justify-between bg-white">
                 <input class="pl-4 rounded-full input focus:outline-none" type="text" placeholder="Busque aqui seu produto">
@@ -14,7 +24,7 @@
         </form>
     </div>
 
-    <nav class="flex justify-center mt-[20px]">
+    <nav class="flex justify-center mt-[20px] md:hidden">
         <a>
             <div id="ms-mobile-hamb" class="w-[30px] h-[30px] mr-7 svg--white svg--size-20 rounded-full flex justify-center items-center" w3-include-html="./partials/svgs/hamburguer.html"></div>
         </a>
