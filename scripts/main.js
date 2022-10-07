@@ -1,4 +1,4 @@
-import header from './partials/header.js';
+import header from './configs/htmlImports.js';
 import tailwind from './configs/tailwind.js';
 import menuMobile from './partials/menu.js';
 
