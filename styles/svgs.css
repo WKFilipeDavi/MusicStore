@@ -6,6 +6,10 @@
     fill: #8a2be2;
 }
 
+.svg--pink svg {
+    fill: #e22bdf;
+}
+
 .svg__bg--purple {
     background-color: #8a2be2;
 }
