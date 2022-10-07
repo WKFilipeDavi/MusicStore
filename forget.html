@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/styles/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Music Store - Cadastro</title>
+    <title>Music Store - Recuperação</title>
 </head>
 
 
@@ -18,32 +18,16 @@
   <div w3-include-html="./partials/header.html"></div>
 
   <div class="p-4">
-    <div class="md:max-w-[600px] md:mx-auto">
-      <h1 class="text-[24px]">Cadastro</h1>
+    <div class="md:max-w-[300px] mx-auto mt-20">
+      <h1 class="text-[24px]">Esqueci a senha</h1>
       <form action="" id="frm2">
           <div class="mb-3 mt-3">
-              <label for="nome" class="form-label font-bold">Nome:</label>
+              <label for="nome" class="form-label font-bold">Informe o seu email</label>
               <input type="text" class="form-control" id="cadNome" placeholder="Digite seu nome completo" name="nome">
-          </div>
-          <div class="mb-3 mt-3">
-              <label for="email" class="form-label font-bold">E-mail:</label>
-              <input type="text" class="form-control" id="caEmail" placeholder="Digite seu e-mail" name="email">
-            </div>
-            <div class="mb-3 mt-3">
-              <label for="cpf" class="form-label font-bold">CPF:</label>
-              <input type="text" class="form-control" id="cadCpf" placeholder="Digite seu CPF" name="cpf">
-          </div>
-          <div class="mb-3 mt-3">
-            <label for="user" class="form-label font-bold">Usuário:</label>
-            <input type="text" class="form-control" id="cadUsuario" placeholder="Digite seu usuário" name="user">
-          </div>
-          <div class="mb-3">
-            <label for="senha" class="form-label font-bold">Senha:</label>
-            <input type="password" class="form-control" id="CadSenha" placeholder="Digite sua senha" name="senha">
           </div>
 
           <div class="flex justify-end mt-4">
-            <button type="submit" class="btn btn-primary bg-ms-blue" onclick="validar();">Cadastrar</button>
+            <button type="submit" class="btn btn-primary bg-ms-blue" onclick="validar();">Enviar link de recuperação</button>
           </div>
           
         </form>
