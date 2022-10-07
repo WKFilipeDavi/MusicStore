@@ -19,6 +19,14 @@
     <div class="p-4">
         <div w3-include-html="menu.html" id="ms-mobile-menu" class="hidden md:block ms-mobile-menu fixed md:static top-[0] left-[0] w-9/12 md:mr-4  md:w-[316px] bg-white h-screen md:h-[450px] pt-[40px] md:pt-[20px] px-[20px] z-10 border-2">
         </div>
+        <div class="mb-3 mt-3">
+            <label for="nome" class="form-label font-bold">Nome:</label>
+            <input type="text" class="form-control" id="cadNome" placeholder="Digite seu nome completo" name="nome">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label font-bold">E-mail:</label>
+            <input type="text" class="form-control" id="cadEmail" placeholder="Digite seu e-mail" name="email">
+          </div>
             <div class="flex justify-between items-center">
                 <button type="submit" class="btn btn-secondary bg-ms-pink" onclick="validar();">Entrar</button>
                 <a href="forget.html" class="text-[16px] text-ms-blue"> Esqueci minha senha</a>
