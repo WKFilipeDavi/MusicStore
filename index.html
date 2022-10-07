@@ -16,7 +16,124 @@
 <body>
     <div w3-include-html="./partials/header.html"></div>
     <div class="p-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/images/thwknd.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/lolla2023.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/gnr.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/dl.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/clube.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="ms-card w-[160px] border-2 rounded-xl hover:border-ms-pink">
+            <div class="ms-product-info p-1">
+                <div class="ms-image h-[148px] flex items-center">
+                    <img class="max-h-full max-w-full" src="./assets/images/dawndisck.jpg">
+                </div>
+
+                <div class="ms-product-texts px-[15px]">
+                    <div class="categoria">
+                        <p class="text-xs text-[#999] mt-[5px]">CD</p>
+                    </div>
         
+                    <div class="ms-title my-[5px]">
+                        <p class="text-[14px] pl-[10px]">CD The Weeknd - Dawn FM</p>
+                    </div>
+        
+                    <div class="ms-price mb-[5px]">
+                        <p class="text-ms-purple text-lg">R$20,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mc-controls flex bg-ms-purple items-center justify-around rounded-lg">
+                <p class="text-white">Adicionar</p>
+                <div class="w-[30px] h-[30px] svg--white svg--size-22 rounded-full flex justify-center items-center" w3-include-html="./partials/svgs/cart.html"></div>
+            </div>
+        </div>
+
+        <div class="ms-card w-[160px] border-2 rounded-xl hover:border-ms-pink">
+            <div class="ms-product-info p-1">
+                <div class="ms-image h-[148px] flex items-center justify-center">
+                    <img class="max-h-full max-w-full" src="./assets/images/poster-lg.jpg">
+                </div>
+
+                <div class="ms-product-texts px-[15px]">
+                    <div class="categoria">
+                        <p class="text-xs text-[#999] mt-[5px]">Poster</p>
+                    </div>
+        
+                    <div class="ms-title my-[5px]">
+                        <p class="text-[14px] pl-[10px]">Poster Lady Gaga - chromatica</p>
+                    </div>
+        
+                    <div class="ms-price mb-[5px]">
+                        <p class="text-ms-purple text-lg">R$5,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mc-controls flex bg-ms-purple items-center justify-around rounded-lg">
+                <p class="text-white">Adicionar</p>
+                <div class="w-[30px] h-[30px] svg--white svg--size-22 rounded-full flex justify-center items-center" w3-include-html="./partials/svgs/cart.html"></div>
+            </div>
+        </div>
+
+        <div class="ms-card w-[160px] border-2 rounded-xl hover:border-ms-pink">
+            <div class="ms-product-info p-1">
+                <div class="ms-image h-[148px] flex items-center">
+                    <img class="max-h-full max-w-full" src="./assets/images/blusa-slipknot.jpg">
+                </div>
+
+                <div class="ms-product-texts px-[15px]">
+                    <div class="categoria">
+                        <p class="text-xs text-[#999] mt-[5px]">Blusa</p>
+                    </div>
+        
+                    <div class="ms-title my-[5px]">
+                        <p class="text-[14px] pl-[10px]">Blusa Slipknot - The Gray Chapter</p>
+                    </div>
+        
+                    <div class="ms-price mb-[5px]">
+                        <p class="text-ms-purple text-lg">R$26,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mc-controls flex bg-ms-purple items-center justify-around rounded-lg">
+                <p class="text-white">Adicionar</p>
+                <div class="w-[30px] h-[30px] svg--white svg--size-22 rounded-full flex justify-center items-center" w3-include-html="./partials/svgs/cart.html"></div>
+            </div>
+        </div>
+
+
     </div>
 
     <!-- JavaScript Bundle with Popper -->

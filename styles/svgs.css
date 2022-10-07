@@ -2,6 +2,10 @@
     fill: white;
 }
 
+.svg--purple svg {
+    fill: #8a2be2;
+}
+
 .svg__bg--purple {
     background-color: #8a2be2;
 }
@@ -12,4 +16,8 @@
 
 .svg--size-20 svg {
     width: 20px;
+}
+
+.svg--size-22 svg {
+    width: 22px;
 }
