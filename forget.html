@@ -23,10 +23,10 @@
     
     <div class="md:max-w-[300px] mx-auto mt-20">
       <h1 class="text-[24px]">Esqueci a senha</h1>
-      <form action="" id="frm2">
+      <form action="" id="frm3">
           <div class="mb-3 mt-3">
               <label for="nome" class="form-label font-bold">Informe o seu email</label>
-              <input type="text" class="form-control" id="cadNome" placeholder="Digite seu nome completo" name="nome">
+              <input type="text" class="form-control" id="esqEmail" placeholder="Informe seu e-mail de cadastro" name="nome">
           </div>
 
           <div class="flex justify-end mt-4">
@@ -42,3 +42,17 @@
     <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
+
+<script lang="javascript">
+  function validar(){
+      if(esqEmail.value.length<6 ||
+          esqEmail.value.indexOf("@")<1) {
+          alert("Informe o email corretamente!");
+          esqEmail.focus();    
+          return false;    
+      }
+      //window.location.href="outrapagina.html";
+      alert("E-mail enviado com sucesso.\nConfira sua caixa de e-mail");
+      frm3.submit();
+  }
+  </script>

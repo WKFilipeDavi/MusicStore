@@ -19,29 +19,15 @@
     <div class="p-4">
         <div w3-include-html="menu.html" id="ms-mobile-menu" class="hidden md:block ms-mobile-menu fixed md:static top-[0] left-[0] w-9/12 md:mr-4  md:w-[316px] bg-white h-screen md:h-[450px] pt-[40px] md:pt-[20px] px-[20px] z-10 border-2">
         </div>
-
-
-        <div class="flex flex-col md:flex-row justify-center md:mt-24">
-            <form action="" id="frm1" class="md:pr-14 md:border-r-2 md:border-ms-purple">
-                <div class="mb-3 mt-3">
-                <label for="user" class="form-label text-[18px] font-bold">Usuário:</label>
-                <input type="text" class="form-control" id="usuario" placeholder="Digite seu usuário" name="user">
-                </div>
-                <div class="mb-3">
-                <label for="senha" class="form-label text-[18px] font-bold">Senha:</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" name="senha">
-                </div>
-
-                <div class="flex justify-between items-center">
-                    <button type="submit" class="btn btn-primary bg-ms-blue" onclick="validar();">Entrar</button>
-                    <a href="forget.html" class="text-[16px] text-ms-blue">Esqueci minha senha</a>
-                </div>
-            </form>
-
-            <div class="md:ml-14 mt-14 md:mt-0 md:self-center">
-                <h2 class="text-[16px] mb-2">Ainda não tem cadastro?</h2>
-                <a href="cadastro.html" class="btn btn-primary bg-ms-blue">Clique Aqui</a>
+            <div class="flex justify-between items-center">
+                <button type="submit" class="btn btn-secondary bg-ms-pink" onclick="validar();">Entrar</button>
+                <a href="forget.html" class="text-[16px] text-ms-blue"> Esqueci minha senha</a>
             </div>
+        </form>
+
+        <div class="md:ml-14 mt-14 md:mt-0 md:self-center">
+            <h2 class="text-[16px] mb-2">Ainda não tem cadastro?</h2>
+            <a href="cadastro.html" class="btn btn-secondary bg-ms-pink">Clique Aqui</a>
         </div>
 
     </div>
@@ -62,7 +48,7 @@
         if(senha.value.length<6){
             alert("Informe a senha");
             senha.focus();    
-            return false;    
+            return false;
         }
         alert("Entrou");
         frm1.submit();
