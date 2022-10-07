@@ -3,17 +3,19 @@ function init() {
 
         // jQuery methods go here...
         let menuMobile = document.getElementById('ms-mobile-menu');
-        let closeBtn = document.getElementById('ms-close-btn');
         let hambMobBtn = document.getElementById('ms-mobile-hamb');
-    
-        closeBtn.addEventListener("click", function() {
-            menuMobile.classList.add('hidden');
-        });
+        var closeBtn = document.getElementById('ms-close-btn');
+
     
         hambMobBtn.addEventListener("click", function() {
             menuMobile.classList.remove('hidden');
+            closeBtn = document.getElementById('ms-close-btn');
+            
+            closeBtn.addEventListener("click", function() {
+                menuMobile.classList.add('hidden');
+            });
         });
-      
+
       }); 
 }
 
