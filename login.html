@@ -30,14 +30,14 @@
             </div>
 
             <div class="flex justify-between items-center">
-                <button type="submit" class="btn btn-primary bg-ms-blue" onclick="validar();">Entrar</button>
+                <button type="submit" class="btn btn-secondary bg-ms-pink" onclick="validar();">Entrar</button>
                 <a href="forget.html" class="text-[16px] text-ms-blue">Esqueci minha senha</a>
             </div>
         </form>
 
         <div class="md:ml-14 mt-14 md:mt-0 md:self-center">
             <h2 class="text-[16px] mb-2">Ainda não tem cadastro?</h2>
-            <a href="cadastro.html" class="btn btn-primary bg-ms-blue">Clique Aqui</a>
+            <a href="cadastro.html" class="btn btn-secondary bg-ms-pink">Clique Aqui</a>
         </div>
     </div>
 
@@ -59,7 +59,7 @@
         if(senha.value.length<6){
             alert("Informe a senha");
             senha.focus();    
-            return false;    
+            return false;
         }
         alert("Entrou");
         frm1.submit();
